@@ -1,0 +1,24 @@
+{
+  "name": "imh_net",
+  "version": "1.0.0",
+  "description": "IMH Social Network",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wagnerperin/imh_net.git"
+  },
+  "author": "Wagner de Andrade Perin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wagnerperin/imh_net/issues"
+  },
+  "homepage": "https://github.com/wagnerperin/imh_net#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.1",
+    "fastify-plugin": "^5.1.0"
+  }
+}
