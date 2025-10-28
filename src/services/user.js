@@ -1,13 +1,16 @@
-let users = [
-    {id:1, name: "Wagner Perin", username: "wagnperin"},
-    {id:2, name: "Guilherme Souza", username: "guizim"},
-    {id:3, name: "Bruno Alves", username: "bruninhoda011"}
-]
+const User = require('../models/user');
+
+async function createUser(userData) {
+    const user = new User(userData);
+    await user.save();
+    return user;
+}
 
 async function findUsers(){
-    return await users;
+    return await User.find({});
 }
 
 module.exports = {
+    createUser,
     findUsers
 };
